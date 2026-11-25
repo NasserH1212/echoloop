@@ -2,8 +2,7 @@
 
 ## Status
 
-M0 scaffold verified locally. Final files, remote CI, and public deployment
-await verification.
+M0 — VERIFIED on 2026-11-25. The ECHOLOOP title screen is live on [GitHub Pages](https://nasserh1212.github.io/echoloop/).
 
 ## Locked Decisions
 
@@ -29,12 +28,17 @@ None.
 ## Verification Log
 
 - 2026-11-24: `npm.cmd run verify` passed on Windows with Node v26.13.1.
-  Developer terminal output showed 42 core-rule tests and 2 font tests passing.
-  ESLint, TypeScript, and the Vite production build passed in the same run.
-- Developer browser screenshot confirmed the local production preview
-  at `/echoloop/` with the centered title and arena border.
-- Verification after adding the final M0 files: pending.
-- GitHub Actions run and public Pages URL: pending.
+  All 42 core-rule tests and both font tests passed. ESLint, TypeScript, and the
+  Vite production build passed in the same run.
+- The local production preview at `/echoloop/` displayed the centered title
+  and arena border.
+- 2026-11-25: `npm.cmd run verify` passed with the final M0 files in place.
+  All 44 tests and the production build passed.
+- 2026-11-25: GitHub Actions verified commit `2a3aeb0` on `main`. All 44 tests
+  passed. After GitHub Pages was enabled, the deployment succeeded on the
+  second attempt. [View the workflow run](https://github.com/NasserH1212/echoloop/actions/runs/45591222899).
+- 2026-11-25: The developer opened the public site in a browser and confirmed
+  that the centered ECHOLOOP title rendered. [Open the live site](https://nasserh1212.github.io/echoloop/).
 
 ## Waves
 
@@ -47,6 +51,4 @@ render cost, library compatibility, and deployment.
 
 ## Next Tasks
 
-1. Run local verification with the final M0 files.
-2. Run CI on GitHub and open the deployed Pages URL.
-3. Record the run link and live URL, then close M0.
+1. Begin M1.
