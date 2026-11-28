@@ -8,6 +8,7 @@ const allowedMath = new Set([
   'ceil',
   'floor',
   'fround',
+  'imul',
   'max',
   'min',
   'round',
