@@ -2,7 +2,7 @@
 
 ## Status
 
-M1b — DELIVERED. Runtime verification and release evidence are tracked below.
+M1b — DELIVERED and deployed. Manual display and visibility checks pending.
 
 M1a — VERIFIED locally on 2026-11-27 by the developer.
 
@@ -51,28 +51,13 @@ None.
 
 ## Verification Log
 
-- 2026-11-27: M1b local Windows verification passed: 119 tests in eight files,
-  including 14 new runtime tests. ESLint, TypeScript and Vite also passed.
-
-- 2026-11-24: `npm.cmd run verify` passed on Windows with Node v26.13.1.
-  All 42 core-rule tests and both font tests passed. ESLint, TypeScript, and the
-  Vite production build passed in the same run.
-- The local production preview at `/echoloop/` displayed the centered title
-  and arena border.
-- 2026-11-25: `npm.cmd run verify` passed with the final M0 files in place.
-  All 44 tests and the production build passed.
-- 2026-11-25: GitHub Actions verified commit `2a3aeb0` on `main`. All 44 tests
-  passed. After GitHub Pages was enabled, the deployment succeeded on the
-  second attempt. [View the workflow run](https://github.com/NasserH1212/echoloop/actions/runs/45591222899).
-- 2026-11-25: The developer opened the public site in a browser and confirmed
-  that the centered ECHOLOOP title rendered. [Open the live site](https://nasserh1212.github.io/echoloop/).
-
-- 2026-11-26: Local Windows run on Node v26.13.1: `npm.cmd run verify`
-  exited 0. All 105 tests in six files passed (44 M0 and 61 new). Formatting,
-  ESLint, TypeScript, and the Vite production build succeeded.
-- 2026-11-27: Developer terminal screenshots confirm `npm.cmd run verify`
-  passed in the project directory. Vitest passed all 105 tests across six files;
-  Vite finished the production build in 427 ms.
+- 2026-11-24: M0 Windows verification on Node v26.13.1 passed all 42 core-rule tests, both font tests, lint, typecheck and production build. The local preview showed the title and arena border.
+- 2026-11-25: Final M0 local verification passed 44/44. The developer confirmed the deployed title after Pages succeeded for `2a3aeb0`. [M0 run](https://github.com/NasserH1212/echoloop/actions/runs/45591222899)
+- 2026-11-26: M1a local verification on Node v26.13.1 passed 105/105 across six files, including formatting, lint, typecheck and build.
+- 2026-11-27: Developer screenshots confirmed M1a, 105/105 and a 427 ms Vite build.
+- 2026-11-27 and 2026-11-28: M1b Windows `npm.cmd run verify` passed 119/119 across eight files, including 14 new timing and readout tests. ESLint, TypeScript and Vite passed.
+- 2026-11-28: GitHub Actions verified and deployed `d459f2b` to Pages. Both `build / verify` and `deploy` succeeded. [M1 run](https://github.com/NasserH1212/echoloop/actions/runs/46161132636)
+- Automated integration covers a ten-second hidden interval. Live TICK, SIM, display FPS and return from a hidden tab await a developer browser observation.
 
 ## Waves
 

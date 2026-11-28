@@ -8,10 +8,10 @@ player's previous inputs alongside the next attempt.
 
 ## Current build
 
-The M0 build displays a centered title and a letterboxed 16:10 PixiJS canvas.
-It includes self-hosted fonts, TypeScript checks, and automated tests for the
-fonts and the rules that isolate simulation code. Playable combat is planned
-for M3 and the first playable Echo for M4.
+The [live demo](https://nasserh1212.github.io/echoloop/) displays the title and
+a letterboxed 16:10 arena. The bottom-left readout shows completed ticks, steps
+in the past second and presentation FPS. Switch tabs to pause the clock.
+Playable combat is planned for M3 and the first playable Echo for M4.
 
 ## Run locally
 
