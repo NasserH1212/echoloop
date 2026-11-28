@@ -57,9 +57,21 @@ h1 {
 #render-status {
   position: absolute;
   inset-inline: 4%;
-  bottom: 4%;
+  bottom: calc(4% + 1.6rem);
   margin: 0;
   text-align: center;
   font-family: 'JetBrains Mono', monospace;
   font-variant-numeric: tabular-nums;
+}
+
+#tick-readout {
+  position: absolute;
+  left: 4%;
+  bottom: 4%;
+  color: #9aa6af;
+  font:
+    0.75rem 'JetBrains Mono',
+    monospace;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
 }

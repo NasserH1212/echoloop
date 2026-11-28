@@ -1,6 +1,6 @@
 import { Application, Graphics } from 'pixi.js';
 
-export async function mountLanding(host: HTMLElement): Promise<void> {
+export async function mountLanding(host: HTMLElement): Promise<() => void> {
   const app = new Application();
 
   await app.init({
@@ -20,11 +20,11 @@ export async function mountLanding(host: HTMLElement): Promise<void> {
   app.stage.addChild(frame);
   app.canvas.setAttribute('aria-hidden', 'true');
   host.prepend(app.canvas);
-  app.render();
 
   if (import.meta.hot) {
     import.meta.hot.dispose(() => {
       app.destroy({ removeView: true }, { children: true });
     });
   }
+  return () => app.render();
 }
